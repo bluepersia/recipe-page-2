@@ -9,6 +9,8 @@
     --WengeBrown: hsl(30, 10%, 34%);
     --DarkCharcoal: hsl(24, 5%, 18%);
     --BrandyRed: hsl(14, 45%, 36%);
+    --Snow: hsl(331, 100%, 98%);
+    --WhiteCoffee: hsl(30, 18%, 87%);
 
     --font-1: "Young Serif", serif;
     --font-2: "Outfit", sans-serif;
@@ -19,7 +21,10 @@ body {
     margin: 0;
     font-family: var(--font-2);
     color: var(--WengeBrown);
+    line-height: 1.6;
 }
+
+
 
 * {
     box-sizing: border-box;
@@ -36,6 +41,8 @@ body {
 h1, h2
 {
     font-family: var(--font-1);
+    font-weight: 400;
+    line-height: 100%;
 }
 h1 {
     color: var(--DarkCharcoal);
@@ -48,3 +55,85 @@ h2 {
 h3 {
     color: var(--DarkRaspberry);
 }
+
+
+.img-main {
+    width: 100%;
+}
+
+.main {
+    padding: 2.5em 8.5%;
+}
+
+
+.prep {
+    background-color: var(--Snow);
+    border-radius: .5em;
+    padding: 1.5em 7.7%;
+    margin-bottom: 2em;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.prep_list {
+    
+    padding-left: 7%;
+}
+.prep_list_item {
+    padding-left: 7%;
+}
+
+
+.section {
+    border-bottom: var(--WhiteCoffee) solid 1px;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+
+
+
+.section_list {
+    padding-left: 5%;
+}
+
+.section_list_item {
+    padding-left: 5%;
+}
+
+
+.table_row {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.table_row:not(:first-child)
+{
+    margin-top: .75em;
+}
+.table_row:not(:last-child)
+{
+    margin-bottom: .75em;
+    border-bottom: 1px solid var(--WhiteCoffee);
+}
+
+.table_key {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.table_val {
+    margin-top: 0;
+    font-weight: bold;
+    color: var(--BrandyRed);
+}
+
+.table_key, .table_val {
+    width: 50%;
+}
+
+
